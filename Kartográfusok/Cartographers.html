@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript" src="Cartographers.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartográfusok</title>
+</head>
+<style>
+    body{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 95vh;
+    }
+    .screen {
+        border: 5px solid black;
+        height: 90vh;
+        width:80vw;
+        background-color: brown;
+    }
+    .board{
+        height:100%;
+        width:100%;
+    }
+    body {
+        background-color: lightblue;
+    }
+    td {
+        border: 1px solid black;
+        background-color: burlywood;
+        width: 50%;
+        height:33%;
+        text-align: center;
+    }
+    .play {
+        width: 9.09%;
+        height:9.09%;
+        background-color: burlywood;
+        border:0px;
+    }
+    .title{
+        font-size: 80px;
+        text-align: center;
+        font-style: bold;
+        font-variant: small-caps;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    .important{
+        font-size: 80px;
+        text-align: center;
+        font-style: bold;
+        font-variant: small-caps;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    .season{
+        height:100%;
+        width:100%;
+        text-align: center;
+    }
+    img{
+        width:95%;
+        height: 95%;
+    }
+    .tile{
+        width:100%;
+        height: 100%;
+    }
+    input{
+        width:100%;
+        height:100%;
+        font-size: 30px;
+        font-style: bold;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    .notice_board
+    {
+        height:100%;
+        width:100%;
+        text-align: center;
+    }
+    .notice_board td
+    {
+        height:25%;
+        width:50%
+    }
+    .notice_board img
+    {
+        width:100%;
+        height:100%
+    }
+</style>
+<body>
+    <table class="screen">
+        <tr>
+            <td class="title">
+                Kartográfusok
+            </td>
+            <td>
+                <table class="season">
+                    <tr>
+                        <td style="width:25%;background-color: lightgreen;" id="spring">Tavasz: 0</td>
+                        <td style="width:25%;background-color: yellow;" id="summer">Nyár: 0</td>
+                        <td style="width:25%;background-color: orangered;" id="autumn">Ősz: 0</td>
+                        <td style="width:25%;background-color: lightblue;" id="winter">Tél: 0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style=text-align:center>
+                            <div id="total">Összesen: 0</div>
+                            <div id="currseason">Évszak: Tavasz (AB)</div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <table class="board"id="board">
+
+                </table>
+            </td>
+            <td>
+                <table class="notice_board" id="quests">
+                    <tr>
+                        <td id="0">A    pontok: 0</td>
+                        <td id="1">B    pontok: 0</td>
+                    </tr>
+                    <tr>
+                        <td id="first"></td>
+                        <td id="second"></td>
+                    </tr>
+                    <tr>
+                        <td id="third"></td>
+                        <td id="fourth"></td>
+                    </tr>
+                    <tr>
+                        <td id="2">C    pontok: 0</td>
+                        <td id="3">D    pontok: 0</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="tile">
+                    <tr>
+                        <td colspan="2" style="width:40%">
+                            <div id="time">Évszak idő: 0/7</div>
+                            <div id="currtime">Aktuális elem ideje:</div>
+                        </td>
+                        <td style="width:20%" id="00x"></td>
+                        <td style="width:20%" id="01x"></td>
+                        <td style="width:20%" id="02x"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="width:40%">
+                            <input type="button" value="Forgatás" id="rotate">
+                        </td>
+                        <td style="width:20%" id="10x"></td>
+                        <td style="width:20%" id="11x"></td>
+                        <td style="width:20%" id="12x"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="width:40%">
+                            <input type="button" value="Tükrözés" id="mirror">
+                        </td>
+                        <td style="width:20%" id="20x"></td>
+                        <td style="width:20%" id="21x"></td>
+                        <td style="width:20%" id="22x"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
