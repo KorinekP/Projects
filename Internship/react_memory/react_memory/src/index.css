@@ -1,0 +1,118 @@
+.body {
+  background-color: lightgray;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.body-landing-page {
+  text-align: center;
+}
+.body-title {
+  margin-top: 250px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+}
+.header-left-logo {
+  width: 150px;
+}
+.header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-button {
+  background-color: #f04e23;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.start-button:hover {
+  background-color: #d4441f;
+}
+
+.game {
+  margin: 0 auto;
+  padding-top: 60px;
+  text-align: center;
+}
+.game-over {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.table {
+  margin: 210px auto 20px;
+  border-spacing: 10px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  border-radius: 20%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+}
+.card-image {
+  width: 80px;
+  height: 80px;
+}
+.card-image-matched {
+  opacity: 0.5;
+}
+
+.button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  width: 200px;
+  height: 50px;
+  font-size: larger;
+  background-color: #f04e23;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #a22b0b;
+}
+.button:focus {
+  outline: none;
+}
+
+.decksizer {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=index.css.map */

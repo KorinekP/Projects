@@ -1,0 +1,61 @@
+@mixin common-styles 
+  border: 1px solid black
+  padding: 5px
+
+$primaryColor: burlywood
+$secondaryColor: whitesmoke
+$accentColor: #754204
+
+.display
+  margin: 0 auto
+  border: 1px solid black
+  background-color: $accentColor
+  td 
+    width: 170px
+    height: 20px
+    background-color: $secondaryColor
+    @include common-styles
+  
+
+
+.graph
+  width: 700px
+  height: 200px
+  background-color: $secondaryColor
+  @include common-styles
+
+.content 
+  background-color: $primaryColor
+  text-align: center
+  width: 700px
+  margin: 0 auto
+
+
+.action 
+  background-color: bisque
+
+
+.form 
+  margin-left: 45px
+
+
+.record 
+  width: 180px
+
+
+.statistics 
+  margin-bottom: 20px
+
+
+.data 
+  display: flex
+  margin-left: 8px
+  aside 
+    background-color: $secondaryColor
+    width: 50%
+    @include common-styles
+
+.progress 
+  background-color: $secondaryColor
+  @include common-styles
+  margin-left: 8px

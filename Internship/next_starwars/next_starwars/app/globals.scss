@@ -1,0 +1,88 @@
+$primaryColor : darkgrey;
+$secondaryColor : rgb(52, 51, 51);
+$accentColor : darkblue;
+$backgroundColor: lightgrey;
+$bodyback: whitesmoke;
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.background{
+  background-color: $bodyback;
+  height: 100%;
+  width: 100%;
+  top:0px;
+  left:0px;
+  position: absolute;
+}
+.body{
+    width:700px;
+    height: 400px;
+    margin: 250px auto;
+    border: 2px solid $secondaryColor;
+    border-radius: 5%;
+    text-align: center;
+    background-color: $backgroundColor;
+}
+.auth {
+    background-color: $primaryColor;
+    padding: 10px;
+    &--choice{
+        &--button{
+            border-radius: 10px;
+            margin: 10px;
+            background-color: $secondaryColor;
+            color: $primaryColor;
+        }
+    }
+    &--inputs{
+        &--input{
+            margin: 10px;
+            background-color: $bodyback;
+        }
+        &--button{
+            border-radius: 10px;
+            margin: 10px;
+            background-color: $secondaryColor;
+            color: $primaryColor;
+        }
+    }
+}
+.display{
+    &--filter{
+        background-color: $bodyback;
+    }
+    &--selection{
+        border-radius: 10px;
+            margin: 10px;
+            background-color: $secondaryColor;
+            color: $primaryColor;
+    }
+    &--list{
+        list-style-type: none;
+        margin: 2px;
+        padding: 3px;
+        :link, :visited{
+            color:$secondaryColor;
+            text-decoration: none;
+        }
+    }
+    &--button{
+        border-radius: 10px;
+            margin: 10px;
+            background-color: $secondaryColor;
+            color: $primaryColor;
+    }
+}
+.detail{
+    &--info{
+        margin:30px;
+        font-size: 20px;
+    }
+    &--button{
+        border-radius: 10px;
+            margin: 10px;
+            background-color: $secondaryColor;
+            color: $primaryColor;
+            width:60px;
+    }
+}

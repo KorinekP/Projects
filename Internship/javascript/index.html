@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pomodoro.js"></script>
+</head>
+<body class="body">
+    <header>Pomodoro Timer</header>
+    <main>
+        <section class="display part">
+            <svg class="circle">
+                <circle id="track" cx="150" cy="150" r="140" fill="black" stroke="200"></circle>
+                <circle id="progress" cx="150" cy="150" r="130" fill="antiquewhite" stroke="antiquewhite" stroke-width="20" stroke-dasharray="0 200"></circle>
+                <text x="50%" y="40%" text-anchor="middle" alignment-baseline="central" id="stage">
+                    Pomodoro 1
+                </text>
+                <text x="50%" y="60%" text-anchor="middle" alignment-baseline="central" id="timer">
+                    25:00
+                </text>
+            </svg>
+        </section>
+        <section class="buttons part">
+            <button class="control" id="start_pause">Start</button>
+            <button class="control" id="reset">Reset</button>
+        </section>
+        <section class="settings part">
+            <div class="setting" id="pomodoro-setting">
+                <p>Pomodoro</p>
+                <p id="pomodoro-timer">25:00</p>
+                <p>
+                    <button class="plus pomodoro">+</button>
+                    <button class="minus pomodoro">-</button>
+                </p>
+            </div>
+            <div class="setting" id="short-break-setting">
+                <p>Short Break</p>
+                <p id="short-break-timer">05:00</p>
+                <p>
+                    <button class="plus short_break">+</button>
+                    <button class="minus short_break">-</button>
+                </p>
+            </div>
+            <div class="setting" id="long-break-setting">
+                <p>Long Break</p>
+                <p id="long-break-timer">25:00</p>
+                <p>
+                    <button class="plus long_break">+</button>
+                    <button class="minus long_break">-</button>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="debug">
+        <input type="checkbox" id="debug_checkbox">Speed up
+    </footer>
+</body>
+</html>

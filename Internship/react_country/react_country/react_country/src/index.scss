@@ -1,0 +1,127 @@
+$primaryColor: whitesmoke;
+$secondaryColor: rgb(48, 53, 48);
+$accentColor: rgb(2, 36, 2);
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+
+.background {
+    background-color: $accentColor;
+}
+
+.title {
+    font-size: 40px;
+    color:$primaryColor;
+}
+
+.body {
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+    background-color: $secondaryColor;
+    border: 3px solid $primaryColor;
+}
+
+.input {
+    margin: 5px;
+    background-color: grey;
+    height: 30px;
+}
+
+.list {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__element {
+        border: 3px solid $accentColor;
+        margin: 5px auto;
+        padding: 10px;
+        border-radius: 5%;
+        background-color: $primaryColor;
+        width: 500px;
+        height: 400px;
+
+        &__title {
+            color: black;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        &__flag {
+            border: 1px solid black;
+        }
+    }
+}
+
+.details {
+    padding-top: 10px;
+    margin: 20px auto;
+    background-color: $primaryColor;
+    width: 80%;
+    max-width: 800px;
+
+    &__flag {
+        padding: 0px;
+        display: block;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 400px;
+    }
+
+    &__title {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    &__info {
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    &__borders {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        list-style-type: none;
+
+        &__element {
+            margin-bottom: 5px;
+            margin-right: 45px;
+        }
+
+        &__link {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: $secondaryColor;
+            color: $primaryColor;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: darken($secondaryColor, 10%);
+            }
+        }
+    }
+
+    &__return {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: $secondaryColor;
+        color: $primaryColor;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: darken($secondaryColor, 10%);
+        }
+    }
+}

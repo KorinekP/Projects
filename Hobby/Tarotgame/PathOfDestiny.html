@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path of Destiny</title>
+</head>
+<img class="preload" src="tarot/others/tower.jpg" alt="">
+<img class="preload" src="tarot/others/bgmoon.jpg" alt="">
+<img class="preload" src="tarot/others/death.jpg" alt="">
+<img class="preload" src="tarot/others/bg.jpg" alt="">
+<style>
+    .preload
+    {
+        display:none;
+    }
+    body
+    {
+        caret-color:transparent;
+        justify-content: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: black;
+        background-image: url("tarot/others/bg.jpg");
+    }
+    .eclipse
+    {
+        background-image: url("tarot/others/bgmoon.jpg");
+    }
+    .tower
+    {
+        background-image: url("tarot/others/tower.jpg");
+    }
+    .death
+    {
+        background-image: url("tarot/others/death.jpg");
+    }
+
+    .essence {
+    background-image: url("tarot/others/bg.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+
+    width: 80px;
+    position: absolute;
+    top: 900px;
+    left: 1590px;
+    border: 2px solid rgb(92, 54, 6); 
+    border-radius: 5px; 
+    text-align: center; 
+    font-size: 30px ; 
+    font-family: 'Papyrus', sans-serif;
+    font-weight: bold; 
+    color: black;
+    }
+
+    h1
+    {
+        text-align: center;
+        font-size: 25px;
+        color:antiquewhite;
+    }
+    .container {
+    display: flex;
+    width: 100%;
+    }
+
+    .stat{
+        flex-grow: 8;
+    }
+
+    .mana {
+        flex-grow: 7;
+    }
+
+    .middle {
+        flex-grow: 0;
+    }
+
+    #board {
+        height: 750px;
+        width: 710px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        background-color: burlywood;
+    }
+
+    td {
+        height: 115px;
+        width: 95px;
+        text-align: center;
+    }
+
+    img {
+        position: relative;
+        height: 115px;
+        width: 95px;
+    }
+    .stat .eye
+    {
+        width: 490px;
+        height: 490px;
+        bottom: -10%;
+        left:12%;
+    }
+    .stat .topmana, .botmana
+    {
+        width: 100px;
+        height: 100px;
+    }
+    .topmana
+    {
+        left:70px;
+        top:50px;
+    }
+    .botmana
+    {
+        left:70px;
+        top:120px;
+    }
+    .topmana:nth-child(odd) {
+    left: 370px; 
+    }
+    .botmana:nth-child(odd) {
+    left: 370px; 
+    }
+    .heart
+    {
+        height: 100px;
+        width: 100px;
+        left:738px;
+        padding-left: 30px;
+        bottom:2px;
+    }
+</style>
+<body>
+    <h1>Path of Destiny</h1>
+    <div class="container">
+        <div class="stat"><img class="topmana" id=2 src="./tarot/others/Empty.png"><img class="topmana" id=1 src="./tarot/others/Empty.png">
+            <img class="eye" id="swords" src="./tarot/others/0Sword.png">
+            <div></div>
+            <img class="botmana" id=6 src="./tarot/others/Empty.png"><img class="botmana" id=5 src="./tarot/others/Empty.png"></div>
+        <div class="mana"></div>
+        <div class="middle">
+            <table id="board">
+
+            </table>
+        </div>
+        <div class="mana"></div>
+        <div class="stat">
+            <img class="topmana" id=4 src="./tarot/others/Empty.png"><img class="topmana" id=3 src="./tarot/others/Empty.png">
+            <img class="eye" id="shields" src="./tarot/others/0Shield.png">
+            <div></div>
+            <img class="botmana" id=8 src="./tarot/others/Empty.png"><img class="botmana" id=7 src="./tarot/others/Empty.png"></div>
+        </div>
+    </div>
+    <div><img class="heart" id="heart1">
+        <img class="heart" id="heart2">
+        <img class="heart" id="heart3"> </div>
+        <div class="essence" id="essence">17</div>
+</body>
+</html>
+<script src="enemy.js"></script>
+<script src="fundamentals.js"></script>
+<script src="gamelogic.js"></script>

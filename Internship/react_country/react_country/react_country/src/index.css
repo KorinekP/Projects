@@ -1,0 +1,113 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+}
+
+.background {
+  background-color: rgb(2, 36, 2);
+}
+
+.title {
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+.body {
+  width: 90%;
+  text-align: center;
+  margin: 20px auto;
+  background-color: rgb(48, 53, 48);
+  border: 3px solid whitesmoke;
+}
+
+.input {
+  margin: 5px;
+  background-color: grey;
+  height: 30px;
+}
+
+.list {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.list__element {
+  border: 3px solid rgb(2, 36, 2);
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 5%;
+  background-color: whitesmoke;
+  width: 500px;
+  height: 400px;
+}
+.list__element__title {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+}
+.list__element__flag {
+  border: 1px solid black;
+}
+
+.details {
+  padding-top: 10px;
+  margin: 20px auto;
+  background-color: whitesmoke;
+  width: 80%;
+  max-width: 800px;
+}
+.details__flag {
+  padding: 0px;
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 400px;
+}
+.details__title {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.details__info {
+  padding: 0px;
+  font-size: 20px;
+}
+.details__borders {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+.details__borders__element {
+  margin-bottom: 5px;
+  margin-right: 45px;
+}
+.details__borders__link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: rgb(48, 53, 48);
+  color: whitesmoke;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.details__borders__link:hover {
+  background-color: #181a18;
+}
+.details__return {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgb(48, 53, 48);
+  color: whitesmoke;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.details__return:hover {
+  background-color: #181a18;
+}
+
+/*# sourceMappingURL=index.css.map */

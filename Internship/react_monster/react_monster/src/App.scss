@@ -1,0 +1,77 @@
+$primaryColor : darkcyan;
+$secondaryColor: rgb(4, 169, 169);
+$accentColor: rgb(223, 245, 245);
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img__icon {
+    width: 30px;
+}
+
+.img__icon--big {
+    width: 70px;
+}
+
+.img__icon--large {
+    width: 170px;
+}
+
+.list__element,
+.form {
+    border: 2px solid $primaryColor;
+    border-radius: 5%;
+    background-color: $secondaryColor;
+    padding: 10px;
+    width: 600px;
+    margin: 10px auto;
+}
+
+.app__body {
+    border: 2px solid $primaryColor;
+    border-radius: 5%;
+    padding: 2px;
+    text-align: center;
+    background-color: $accentColor;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.list__element {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+
+    p:last-child {
+        text-align: right;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+
+        span {
+            margin-left: 20px;
+        }
+    }
+}
+
+.list__element p {
+    display: flex;
+    align-items: center;
+}
+
+.list__element img.img__icon {
+    margin-left: 25px;
+    margin-right: 5px;
+}
+
+.input__stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:5px;
+}

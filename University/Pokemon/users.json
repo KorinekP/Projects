@@ -1,0 +1,26 @@
+{
+    "admin": {
+        "name": "admin",
+        "password": "admin",
+        "email": "admin@gmail.com",
+        "money": 0,
+        "numcards": 0,
+        "id": "admin"
+    },
+    "peter": {
+        "name": "peter",
+        "password": "peter1234",
+        "email": "peter@gmail.com",
+        "money": 380,
+        "numcards": 2,
+        "id": "peter"
+    },
+    "65a406993bcfd": {
+        "name": "Benduin",
+        "password": "princeoflight420",
+        "email": "beacon@gmail.com",
+        "money": 1219,
+        "numcards": 5,
+        "id": "65a406993bcfd"
+    }
+}

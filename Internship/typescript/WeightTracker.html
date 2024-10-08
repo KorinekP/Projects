@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight tacker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="content">
+    <header>
+        <h1>
+            Weight Tracker
+        </h1>
+    </header>
+    <main>
+        <section class="form">
+            <form>
+                <input class="record" type="datetime-local" id="date">
+                <input class="record" placeholder="Weight" id="weight">
+                <button class="action" id="add">Add</button>
+            </form>
+        </section>
+        <section class="history">
+            <table class="display" id="display">
+
+            </table>
+        </section>
+        <section class="statistics">
+            <h2>Statistics</h2>
+            <div>
+                <button class="action" id="week">Week</button>
+                <button class="action" id="month">Month</button>
+                <button class="action" id="year">Year</button>
+                <button class="action" id="lifetime">Lifetime</button>
+            </div>
+        </section>
+        <section class="graph">
+            <canvas id="chart" width="700" height="200">
+
+            </canvas>
+        </section>
+        <section class="data">
+            <aside>
+                Current Weight
+                <div id="Current"></div>
+            </aside>
+            <aside>
+                Weight at the start of the period
+                <div id="Start"></div>
+            </aside>
+        </section>
+        <section class="progress">
+            Progress
+            <div id="Progress"></div>
+        </section>
+    </main>
+</body>
+</html>
+<script src="./weight.js"></script>
